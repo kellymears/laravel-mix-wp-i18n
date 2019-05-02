@@ -13,26 +13,21 @@ class I18n {
     return ['shelljs']
   }
 
-  register(config) {
-    const {dir, file, skipJS} = config
+  register(dir, file) {
 
     this.config = {
       translation: {
         dir: dir ? dir : './',
-        file: file ? file : 'translation.pot',
-        skipJS: skipJS ? skipJS : false,
+        file: file ? file : 'translation.pot'
       },
     }
   }
 
   boot() {
     const sh = require('shelljs')
-    const {file, dir, skipJS} = this.config.translation
+    const {file, dir} = this.config.translation
 
-    sh.exec(`wp i18n make-pot ${skipJS ?
-      '--skip_js' : false
-    }. ${dir}${file}`, { silent: true })
-
+    sh.exec(`wp i18n make-pot . ${dir}${file}`, { silent: true })
     sh.exec(`wp i18n make-json ${dir}`, { silent: true })
   }
 }
