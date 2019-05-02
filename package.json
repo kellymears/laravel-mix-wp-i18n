@@ -1,5 +1,5 @@
 {
-  "name": "laravel-mix-wp-i18n",
+  "name": "laravel-mix-wordpress-translate",
   "version": "0.1.0",
   "description": "Generate WordPress translation files from your mix config",
   "main": "index.js",
