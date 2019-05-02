@@ -1,0 +1,23 @@
+{
+  "name": "laravel-mix-wp-i18n",
+  "version": "0.1.0",
+  "description": "Generate WordPress translation files from your mix config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/pixelcollective/laravel-mix-wp-i18n"
+  },
+  "keywords": [
+    "laravel",
+    "laravel mix",
+    "mix",
+    "translation",
+    "wordpress"
+  ],
+  "author": "Kelly Mears",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pixelcollective/laravel-mix-wp-i18n/issues"
+  },
+  "homepage": "https://github.com/pixelcollective/laravel-mix-wp-i18n/#readme"
+}
